@@ -12,6 +12,8 @@ services:
     depends_on:
       - mongodb
   web:
+    ports:
+      - "80:80"
     image: "web:v1"
     container_name: "web"
     depends_on:
